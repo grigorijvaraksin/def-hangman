@@ -1,0 +1,8 @@
+import random
+
+def hangman():
+    words = ["apple", "banana", "orange", "grape", "watermelon"]
+    secret_word = random.choice(words)
+    guessed_letters = set()
+    guesses_left = 6
+    display = ['_'] * len(secret_word)
